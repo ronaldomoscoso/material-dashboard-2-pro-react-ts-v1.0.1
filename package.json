@@ -1,0 +1,92 @@
+{
+  "name": "material-dashboard-2-pro-react-ts",
+  "version": "1.0.0",
+  "private": true,
+  "description": "React + TypeScript version of Material Dashboard 2 PRO by Creative Tim",
+  "dependencies": {
+    "@asseinfo/react-kanban": "2.2.0",
+    "@emotion/cache": "11.10.1",
+    "@emotion/react": "11.10.0",
+    "@emotion/styled": "11.10.0",
+    "@fullcalendar/daygrid": "5.11.2",
+    "@fullcalendar/interaction": "5.11.2",
+    "@fullcalendar/react": "5.11.2",
+    "@fullcalendar/timegrid": "5.11.2",
+    "@mui/icons-material": "5.8.4",
+    "@mui/material": "5.10.0",
+    "@mui/styled-engine": "5.10.0",
+    "@react-jvectormap/core": "1.0.3",
+    "@react-jvectormap/world": "1.1.2",
+    "@testing-library/jest-dom": "5.16.5",
+    "@testing-library/react": "13.3.0",
+    "@testing-library/user-event": "14.4.3",
+    "@types/jest": "28.1.7",
+    "@types/node": "18.7.5",
+    "@types/react": "18.0.17",
+    "@types/react-dom": "18.0.6",
+    "chart.js": "3.4.1",
+    "chroma-js": "2.4.2",
+    "dropzone": "5.9.3",
+    "flatpickr": "4.6.13",
+    "formik": "2.2.9",
+    "html-react-parser": "3.0.1",
+    "react": "18.2.0",
+    "react-chartjs-2": "3.0.4",
+    "react-dom": "18.2.0",
+    "react-flatpickr": "3.10.13",
+    "react-images-viewer": "1.7.1",
+    "react-quill": "2.0.0",
+    "react-router-dom": "6.3.0",
+    "react-scripts": "5.0.1",
+    "react-table": "7.8.0",
+    "stylis": "4.1.1",
+    "stylis-plugin-rtl": "2.1.1",
+    "typescript": "4.7.4",
+    "uuid": "8.3.2",
+    "web-vitals": "2.1.4",
+    "yup": "0.32.11"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/chroma-js": "2.1.4",
+    "@types/dropzone": "5.7.4",
+    "@types/react-flatpickr": "3.8.7",
+    "@types/react-table": "7.7.12",
+    "@types/uuid": "8.3.4",
+    "eslint": "8.22.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-import-resolver-typescript": "3.4.1",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-react": "7.30.1",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "prettier": "2.7.1"
+  }
+}
