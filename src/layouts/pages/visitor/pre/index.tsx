@@ -41,7 +41,7 @@ function PreVisitor(): JSX.Element {
                 <VisitorImage image={productImage} />
               </ItemData>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={8} display="flex">
               <ItemData sx={{ boxShadow: 10, borderRadius: 2 }}>
                 <DataVisitor />
               </ItemData>

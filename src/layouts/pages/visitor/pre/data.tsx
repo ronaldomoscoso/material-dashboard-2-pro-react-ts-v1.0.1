@@ -10,10 +10,20 @@ import initialValues from "./Schemas/initialValues";
 import form from "./Schemas/form";
 import { useState } from "react";
 import BEFormField from "layouts/ecommerce/products/product-page/components/BeSX/BEFormField";
+import MDButton from "components/MDButton";
+import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 
 function DataVisitor(): JSX.Element {
   const [formValues, setformValues] = useState(initialValues);
   const { formId, formField } = form;
+
+  //#region Events
+  const handleSearchSubmit = async () => {
+    try {
+      alert("ronaldo");
+    } catch (error) {}
+  };
+  //#endregion
 
   return (
     <Card sx={{ boxShadow: 0, borderRadius: 5 }}>
@@ -31,9 +41,9 @@ function DataVisitor(): JSX.Element {
         {({ values, errors, handleChange, enableReinitialize }) => (
           <Form id={formId}>
             <MDBox mt={3}>
-              <Grid container spacing={10}>
-                <Grid item xs={2}>
-                  <Item sx={{ boxShadow: 0 }}>
+              <Grid container spacing={5}>
+                <Grid item xs={2} display="flex">
+                  <Item sx={{ boxShadow: 0, verticalAlign: "center" }}>
                     <BEFormField
                       type={formField.passportno.type}
                       id={formField.passportno.id}
@@ -60,6 +70,12 @@ function DataVisitor(): JSX.Element {
                       onChange={handleChange}
                       sx={{ width: "70ch" }}
                     />
+                    <MDBox display="flex" justifyContent="flex-end" sx={{ ml: 3 }}>
+                      <MDButton variant="gradient" color="dark" onClick={handleSearchSubmit}>
+                        <SearchRoundedIcon />
+                        Pesquisar
+                      </MDButton>
+                    </MDBox>{" "}
                   </Item>
                 </Grid>
               </Grid>
