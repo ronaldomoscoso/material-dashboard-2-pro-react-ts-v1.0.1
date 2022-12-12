@@ -75,6 +75,8 @@ import Icon from "@mui/material/Icon";
 import profilePicture from "assets/images/team-3.jpg";
 import PreVisitor from "layouts/pages/visitor/pre";
 import MainVisitor from "layouts/pages/visitor/main";
+import { Search } from "react-router-dom";
+import SearchPerson from "layouts/pages/person/division";
 
 const routes = [
   {
@@ -94,6 +96,21 @@ const routes = [
         key: "visitormain",
         route: "/pages/profile/main/visitor",
         component: <MainVisitor />,
+      },
+    ],
+  },
+  { type: "divider", key: "divider-0" },
+  {
+    type: "collapse",
+    name: "Colaboradores",
+    key: "person",
+    icon: <MDAvatar src={profilePicture} alt="Brooklyn Alice" size="sm" />,
+    collapse: [
+      {
+        name: "Alterar Divisão",
+        key: "changedivision",
+        route: "/pages/profile/person/changedivision",
+        component: <SearchPerson />,
       },
     ],
   },
