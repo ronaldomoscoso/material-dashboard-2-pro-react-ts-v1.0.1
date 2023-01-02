@@ -44,7 +44,7 @@ import { CacheProvider } from "@emotion/react";
 import createCache from "@emotion/cache";
 
 // Material Dashboard 2 PRO React TS routes
-import routes from "routes";
+// import routes from "routesBIS";
 
 // Material Dashboard 2 PRO React TS contexts
 import { useMaterialUIController, setMiniSidenav, setOpenConfigurator } from "context";
@@ -52,6 +52,8 @@ import { useMaterialUIController, setMiniSidenav, setOpenConfigurator } from "co
 // Images
 import brandWhite from "assets/images/logo-ct.png";
 import brandDark from "assets/images/logo-ct-dark.png";
+import routesBIS from "routesBIS";
+import pageRoutes from "page.routes";
 
 export default function App() {
   const [controller, dispatch] = useMaterialUIController();
@@ -164,7 +166,7 @@ export default function App() {
               color="error"
               brand={(transparentSidenav && !darkMode) || whiteSidenav ? brandDark : brandWhite}
               brandName="Portal BIS2"
-              routes={routes}
+              routes={routesBIS}
               onMouseEnter={handleOnMouseEnter}
               onMouseLeave={handleOnMouseLeave}
             />
@@ -174,7 +176,7 @@ export default function App() {
         )}
         {layout === "vr" && <Configurator />}
         <Routes>
-          {getRoutes(routes)}
+          {getRoutes(routesBIS)}
           <Route path="*" element={<Navigate to="/dashboards/analytics" />} />
         </Routes>
       </ThemeProvider>
@@ -188,7 +190,7 @@ export default function App() {
             color={sidenavColor}
             brand={(transparentSidenav && !darkMode) || whiteSidenav ? brandDark : brandWhite}
             brandName="Portal BIS1"
-            routes={routes}
+            routes={routesBIS}
             onMouseEnter={handleOnMouseEnter}
             onMouseLeave={handleOnMouseLeave}
           />
@@ -198,7 +200,7 @@ export default function App() {
       )}
       {layout === "vr" && <Configurator />}
       <Routes>
-        {getRoutes(routes)}
+        {getRoutes(routesBIS)}
         <Route path="*" element={<Navigate to="/dashboards/analytics" />} />
       </Routes>
     </ThemeProvider>

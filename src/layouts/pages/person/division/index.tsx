@@ -21,7 +21,7 @@ function ChangeDivision(): JSX.Element {
           <Grid container spacing={3} alignItems="center">
             <Grid item xs={12} lg={6}>
               <MDTypography variant="h4" fontWeight="medium">
-                Pré-Cadastro de Visitantes
+                Alteração de Divisão
               </MDTypography>
             </Grid>
           </Grid>
@@ -29,9 +29,7 @@ function ChangeDivision(): JSX.Element {
         <MDBox>
           <Grid container justifyContent="flex-start" spacing={1}>
             <Grid item xs={8} display="flex">
-              <ItemData sx={{ boxShadow: 10, borderRadius: 2 }}>
-                <SearchPerson />
-              </ItemData>
+              <ItemData sx={{ boxShadow: 10, borderRadius: 2 }}></ItemData>
             </Grid>
           </Grid>
         </MDBox>

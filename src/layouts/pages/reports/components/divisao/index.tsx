@@ -1,17 +1,11 @@
-import { Grid, Paper, styled } from "@mui/material";
+import { Grid } from "@mui/material";
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 import Footer from "examples/Footer";
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 
-const ItemData = styled(Paper)(({ theme }) => ({
-  backgroundColor: "white",
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: "left",
-}));
-function SearchPerson(): JSX.Element {
+function Division(): JSX.Element {
   return (
     <DashboardLayout>
       <DashboardNavbar />
@@ -23,19 +17,10 @@ function SearchPerson(): JSX.Element {
             </Grid>
           </Grid>
         </MDBox>
-        <MDBox>
-          <Grid container justifyContent="flex-start" spacing={1}>
-            <Grid item xs={8} display="flex">
-              <ItemData sx={{ boxShadow: 10, borderRadius: 2 }}>
-                <SearchPerson />
-              </ItemData>
-            </Grid>
-          </Grid>
-        </MDBox>
       </MDBox>
       <Footer />
     </DashboardLayout>
   );
 }
 
-export default SearchPerson;
+export default Division;
