@@ -95,7 +95,7 @@ const routesBIS = [
       {
         name: "Visitantes",
         key: "visitormain",
-        route: "/pages/profile/main/visitor",
+        route: "/pages/BIS/visitors/main/",
         component: <MainVisitor />,
       },
     ],

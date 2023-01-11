@@ -1,0 +1,13 @@
+    Servidor Externo Orion:     "http://201.48.119.97:10112/api",
+    Servidor Solar:             "http://10.62.150.149:10112/api",
+    Servidor Eloy:               "http://179.191.81.78:10112/api",
+    Servidor Corpor             "http://172.0.6.2:10112/api"
+    Cor Laranja BeSX:           "#ed6f1e",
+    Cor Vermelho Solar/Femsa:   "#d0312d"
+
+    Image Width Solar:          160
+    Image Height Solar:         60
+
+    AUHTID Eloy: 001337BDCAF1CC5F
+
+    AUHTID Corporate:00133DB4448157EF

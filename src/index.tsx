@@ -19,12 +19,15 @@ import App from "App";
 
 // Material Dashboard 2 PRO React TS Context Provider
 import { MaterialUIControllerProvider } from "context";
+import { AuthProvider } from "Contexts/Auth/AuthProvider";
 
 ReactDOM.render(
   <BrowserRouter>
-    <MaterialUIControllerProvider>
-      <App />
-    </MaterialUIControllerProvider>
+    <AuthProvider>
+      <MaterialUIControllerProvider>
+        <App />
+      </MaterialUIControllerProvider>
+    </AuthProvider>
   </BrowserRouter>,
   document.getElementById("root")
 );

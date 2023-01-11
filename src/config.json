@@ -1,0 +1,10 @@
+{
+    "APIServer": "http://201.48.119.97:10112/api",
+    "AUTHID": "001337BDCAF1CC5F",
+    "LOGOIMAGE": "/images/Fortknox.jpeg",
+    "LOGOIMAGEWIDTH": "168px",
+    "LOGOIMAGEHEIGHT": "90px",
+    "HOURGLASSCOLOR": "#ed6f1e",
+    "QRCODE": "true",
+    "LOCALE": "en-US"
+}
